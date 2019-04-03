@@ -1,0 +1,40 @@
+hello world
+Changing password for home.
+Changing password for home.
+Changing password for home.
+Wed Apr  3 09:43:23 +07 2019
+Home
+x86_64
+Linux Home 4.15.0-46-generic #49-Ubuntu SMP Wed Feb 6 09:33:07 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+[    0.000000] microcode: microcode updated early to revision 0x25, date = 2018-04-02
+[    0.000000] Linux version 4.15.0-46-generic (buildd@lgw01-amd64-038) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #49-Ubuntu SMP Wed Feb 6 09:33:07 UTC 2019 (Ubuntu 4.15.0-46.49-generic 4.15.18)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-46-generic root=UUID=ac4195c3-4a93-4790-9d47-a31420297377 ro quiet splash vt.handoff=1
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+home
+home
+home     tty7         2019-04-03 08:46 (:0)
+uid=1000(home) gid=1000(home) groups=1000(home),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),112(lpadmin),127(sambashare)
+home     tty7         :0               Wed Apr  3 08:46    gone - no logout
+reboot   system boot  4.15.0-46-generi Wed Apr  3 08:44   still running
+home     tty7         :0               Wed Apr  3 06:26 - 00:00  (-6:25)
+reboot   system boot  4.15.0-46-generi Wed Apr  3 06:25 - 00:03  (-6:22)
+home     tty7         :0               Tue Apr  2 21:22 - 21:32  (00:10)
+reboot   system boot  4.15.0-46-generi Tue Apr  2 21:21 - 21:32  (00:11)
+home     tty7         :0               Tue Apr  2 13:30 - 13:36  (00:06)
+reboot   system boot  4.15.0-46-generi Tue Apr  2 13:29 - 13:36  (00:07)
+home     tty7         :0               Mon Apr  1 20:34 - 00:15  (03:41)
+home     tty7         :0               Mon Apr  1 19:17 - 20:34  (01:16)
+reboot   system boot  4.15.0-46-generi Mon Apr  1 17:24 - 00:15  (06:51)
+home     tty7         :0               Mon Apr  1 16:21 - 16:27  (00:06)
+reboot   system boot  4.15.0-46-generi Mon Apr  1 16:21 - 16:28  (00:06)
+
+wtmp begins Mon Apr  1 16:20:08 2019
+Login     Name       Tty      Idle  Login Time   Office     Office Phone
+home      Home       tty7     1:00  Apr  3 08:46 (:0)
+ 09:45:32 up  1:01,  1 user,  load average: 0.41, 0.29, 0.24
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+home     tty7     :0               08:46    1:00m  1:20   0.35s cinnamon-session --session cinnamon
