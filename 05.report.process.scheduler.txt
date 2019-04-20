@@ -1,0 +1,14 @@
+  .nr_switches                   : 37153958
+  .nr_switches                   : 37125080
+  .nr_switches                   : 36969549
+  .nr_switches                   : 38680200
+  .nr_switches                   : 37496920
+  .nr_switches                   : 38155426
+  .nr_switches                   : 38453973
+  .nr_switches                   : 37660433
+nr_switches                                  :                 4751
+nr_voluntary_switches                        :                 4221
+nr_involuntary_switches                      :                  530
+nr_switches                                  :                  272
+nr_voluntary_switches                        :                  257
+nr_involuntary_switches                      :                   15
