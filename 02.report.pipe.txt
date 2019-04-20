@@ -1,0 +1,11 @@
+filelist
+filelist.gz
+resultlist
+41 /etc/passwd
+
+              total        
+Mem:            15G       
+cpu cores	: 4
+Random2.jpeg
+Random.jpeg
+2
