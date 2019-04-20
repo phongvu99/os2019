@@ -1,0 +1,25 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0 225688  9444 ?        Ss   14:38   0:04 /sbin/init splash
+root         2  0.0  0.0      0     0 ?        S    14:38   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        I<   14:38   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        I<   14:38   0:00 [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    14:38   0:00 [ksoftirqd/0]
+root         8  0.1  0.0      0     0 ?        I    14:38   0:31 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        I    14:38   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    14:38   0:00 [migration/0]
+root        11  0.0  0.0      0     0 ?        S    14:38   0:00 [watchdog/0]
+lollypop
+19891
+Name:	lollypop
+Umask:	0002
+State:	S (sleeping)
+Tgid:	19891
+Ngid:	0
+Pid:	19891
+PPid:	1792
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+kill -s STOP 19891
+kill -s CONT 19891
+kill -s KILL 19891
