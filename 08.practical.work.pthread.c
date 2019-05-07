@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <pthread.h>
 #include <string.h>
 #include <stdbool.h>
 
 #define BUFFER_SIZE 10
+
+int pid = -1;
 
 typedef struct product
 {
@@ -56,45 +59,33 @@ item *consume()
 	return i;
 }
 
-int main()
-{
+void *producerThread(void* param) {
 	/* code */
-	int option = 0;
-	item *chicken, wing, *french, fries;
+	item *chicken, wing;
 	chicken = &wing;
-	french = &fries;
-	printf("Welcome to fooradise! \n");
-	printf("Our menu today: Chicken Wings and French Fries \n");
-	printf("Chicken Wings: 1 or French fries: 2 \n");
-	while (true)
-	{
-		/* code */
-		scanf("%d", &option);
-		if (option == 1)
-		{
-			printf("2 Chicken Wings coming right up!\n");
-			initChicken(chicken);
-			produce(chicken);
-			produce(chicken);
-			printf("Consuming...\n");
-			chicken = consume();
-			break;
-		}
-		else if (option == 2)
-		{
-			printf("2 French Fries coming right up!\n");
-			initFries(french);
-			produce(french);
-			produce(french);
-			printf("Consuming...\n");
-			french = consume();
-			break;
-		}
-		else
-		{
-			printf("Try again!\n");
-			printf("Chicken Wings: 1 or French fries: 2\n");
-		}
-	}
-	return 0;
+	printf("3 Chicken Wings coming right up!\n");
+	initChicken(chicken);
+	produce(chicken);
+	produce(chicken);
+	produce(chicken);
+	pthread_exit(NULL);
+}
+
+void *consumerThread(void* param) {
+	/* code */
+	printf("Consuming 2 Chicken Wings!\n");
+	consume();
+	consume();
+	pthread_exit(NULL);
+}
+
+int main() {
+	pthread_t tid;
+	printf("This is the main thread speaking\n");
+	printf("Creating producerThread ...\n");
+	pthread_create(&tid, NULL, producerThread, NULL);
+	pthread_join(tid, NULL);
+	printf("Creating consumerThread ...\n");
+	pthread_create(&tid, NULL, consumerThread, NULL);
+	pthread_exit(NULL);
 }
